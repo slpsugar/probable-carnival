@@ -1,0 +1,141 @@
+@font-face {
+    font-family: Formula;
+    src: url(/assets/fonts/FormulaCondensed-Regular.woff) ;
+    font-style: normal;
+    font-weight: normal;
+}
+
+html {
+    box-sizing: border-box;
+    cursor:crosshair;
+}
+
+body {
+    margin:0;
+    font-family: Formula, sans-serif;
+}
+
+/* SIDE MENU */
+
+nav {
+    position: absolute;
+}
+
+/* nav p {
+    max-width: 200px;
+} */
+
+div.nav {
+    min-height: calc(100%/3*1);
+}
+
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color:rgba(144, 19, 19, 1);
+    text-decoration: none;
+    cursor:crosshair;
+}
+
+div, p {
+    color: black;
+    text-transform: uppercase;
+}
+
+.nav {
+    position: relative;
+    width: calc(100vw/12*3);
+    height: calc(100vh/3*1);
+    margin: 20px 0 20px 20px;
+    font-size: 40px;
+}
+
+#my-photo {
+    width: 220px;
+    height: 220px;
+}
+
+#lowercase {
+    text-transform: lowercase;
+}
+
+nav a {
+    display: flex;
+}
+
+.red {
+    font-size: 24px;
+    color: rgba(144, 19, 19, 1);
+}
+
+
+/* WORKS */
+
+#main-content {
+
+}
+
+/* LEFT SIDE */
+
+#left {
+    position: relative;
+    font-size: 24px;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+#left p {
+    margin:0;
+}
+
+#left p:hover{
+    color: rgba(144, 19, 19, 1);
+}
+
+.col-lg-6 {
+    position: relative;
+    width: calc(100vw/12*6);
+    margin-left: calc(100vw/12*3);
+}
+
+
+.col-lg-3 {
+    display: flex;
+    width: calc(100vw/12*3);
+    /* margin: 10px 0 10px 0;  */
+}
+
+.min-preview {
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+/* RIGHT SIDE */
+
+
+/* SCROLL */
+
+#scroll {
+    /* display: flex;
+    position: relative; */
+    /* overflow: scroll; */
+    width: 25%;
+    height: 100%;
+    margin-left: 75%;
+}
+
+
+/* ICON */
+
+#bg-fixed {
+    position: absolute;
+    height: calc(100vh/3*2);
+    bottom: 0;
+    left: 20%;
+    background-repeat: no-repeat;
+}
+

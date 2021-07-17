@@ -63,18 +63,18 @@ div, p {
     position: relative;
     width: calc(100vw/12*2);
     height: calc(100vh/3*1);
-    font-size: 40px;
+    font-size: 4rem;
     margin-bottom: 20px;
 }
 
 #my-photo {
-    width: 200px;
+    width: 20rem;
     height: 200px;
     object-fit:cover;
 }
 
 #lowercase {
-    max-width: 200px;
+    max-width: calc(100vw/12*2);;
     text-transform: lowercase;
 }
 
@@ -83,7 +83,7 @@ nav a {
 }
 
 .red {
-    font-size: 24px;
+    font-size: 2.5rem;
     color: rgba(144, 19, 19, 1);
     transition: color 0.7s ease-in-out;
 }
@@ -100,14 +100,14 @@ nav a {
 
 /* LEFT SIDE */
 
-#left {
+.left {
     position: relative;
-    font-size: 30px;
+    font-size: 3rem;
     align-items: baseline;
     justify-content: flex-end;
 }
 
-#left p {
+.left p {
     margin:0;
 }
 
@@ -131,18 +131,28 @@ nav a {
 
 .min-preview {
     object-fit: cover;
-    margin-left: 10px;
-    width: 30px;
-    height: 30px;
-    border-radius:30px ;
+    margin: 0 1rem 0 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius:3rem ;
 }
 
 /* .web:nth-child() {
     margin-bottom: 30px;
 } */
 
-.web, .illustration {
+#web, #illustration {
     margin-bottom: 30px;
+}
+
+.line{
+    position:absolute;
+    width:0.5rem;
+    background-color: black;
+    height:130%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* RIGHT SIDE */

@@ -1,33 +1,47 @@
 @font-face {
     font-family: Formula;
-    src: url(/assets/fonts/FormulaCondensed-Regular.woff) ;
+    src: url(/assets/fonts/FormulaCondensed-Regular.woff) format("woff"),
+        url(/assets/fonts/FormulaCondensed-Regular.woff2) format("woff2"),
+        url(/assets/fonts/FormulaCondensed-Regular.svg) format("svg"),
+        url(/assets/fonts/FormulaCondensed-Regular.eot) format("eot");
     font-style: normal;
     font-weight: normal;
 }
 
+::-webkit-scrollbar {
+    display:none;
+}
+
 html {
     box-sizing: border-box;
+    font-size: calc(10/1440*100vw);
     cursor:crosshair;
 }
 
 body {
     margin:0;
     font-family: Formula, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    letter-spacing: 1;
+    text-decoration: none;
 }
 
 /* SIDE MENU */
 
 nav {
-    position: absolute;
+    /* position: absolute; */
+    margin: 20px 20px 0 20px;
 }
 
 /* nav p {
     max-width: 200px;
 } */
 
-div.nav {
-    min-height: calc(100%/3*1);
-}
+/* div.nav {
+    height: calc(100%/3*1);
+} */
 
 a:link, a:visited {
     color: black;
@@ -45,20 +59,22 @@ div, p {
     text-transform: uppercase;
 }
 
-.nav {
+.side {
     position: relative;
-    width: calc(100vw/12*3);
+    width: calc(100vw/12*2);
     height: calc(100vh/3*1);
-    margin: 20px 0 20px 20px;
     font-size: 40px;
+    margin-bottom: 20px;
 }
 
 #my-photo {
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
+    object-fit:cover;
 }
 
 #lowercase {
+    max-width: 200px;
     text-transform: lowercase;
 }
 
@@ -69,20 +85,24 @@ nav a {
 .red {
     font-size: 24px;
     color: rgba(144, 19, 19, 1);
+    transition: color 0.7s ease-in-out;
 }
 
 
 /* WORKS */
 
 #main-content {
-
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* LEFT SIDE */
 
 #left {
     position: relative;
-    font-size: 24px;
+    font-size: 30px;
     align-items: baseline;
     justify-content: flex-end;
 }
@@ -93,12 +113,13 @@ nav a {
 
 #left p:hover{
     color: rgba(144, 19, 19, 1);
+    transition: color 0.7s ease-in-out;
 }
 
 .col-lg-6 {
     position: relative;
     width: calc(100vw/12*6);
-    margin-left: calc(100vw/12*3);
+    /* margin-left: calc(100vw/12*3); */
 }
 
 
@@ -109,9 +130,19 @@ nav a {
 }
 
 .min-preview {
+    object-fit: cover;
     margin-left: 10px;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
+    border-radius:30px ;
+}
+
+/* .web:nth-child() {
+    margin-bottom: 30px;
+} */
+
+.web, .illustration {
+    margin-bottom: 30px;
 }
 
 /* RIGHT SIDE */

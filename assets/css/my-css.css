@@ -3,7 +3,8 @@
     src: url(/assets/fonts/FormulaCondensed-Regular.woff) format("woff"),
         url(/assets/fonts/FormulaCondensed-Regular.woff2) format("woff2"),
         url(/assets/fonts/FormulaCondensed-Regular.svg) format("svg"),
-        url(/assets/fonts/FormulaCondensed-Regular.eot) format("eot");
+        url(/assets/fonts/FormulaCondensed-Regular.eot) format("eot"),
+        url(/assets/fonts/FormulaCondensed-Regular.ttf) format("truetype");
     font-style: normal;
     font-weight: normal;
 }
@@ -188,11 +189,7 @@ img.hidden-lg-3 {
     width: 100%;
 }
 
-.hidden-lg-3 + .hidden-lg-3 {
-    margin-top: 2rem;
-}
-
-.hidden-lg div + div {
+.hidden-lg-3 + .hidden-lg-3, .hidden-lg div + div {
     margin-top: 2rem;
 }
 

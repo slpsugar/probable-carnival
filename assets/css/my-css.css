@@ -127,10 +127,9 @@ a.side {
     margin:0;
 }
 
-.left p:hover {
+.left p:hover, .left p:active {
     color: rgba(144, 19, 19, 1);
     text-decoration: rgba(144, 19, 19, 1) underline;
-    transition: color 0.7s ease-in-out;
 }
 
 .col-lg-3 {
@@ -190,6 +189,10 @@ img.hidden-lg-3 {
 }
 
 .hidden-lg-3 + .hidden-lg-3 {
+    margin-top: 2rem;
+}
+
+.hidden-lg div + div {
     margin-top: 2rem;
 }
 

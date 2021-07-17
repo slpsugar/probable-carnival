@@ -11,16 +11,15 @@
         url("/fonts/FormulaCondensed-Regular.woff2") format("woff2"),
         url("/fonts/FormulaCondensed-Regular.eot") format("eot"),
         url("/fonts/FormulaCondensed-Regular.ttf") format("truetype");
-    font-style: normal;
     font-weight: normal;
-    font-display: fallback;
+    font-style: normal;
 }
 
 @font-face {
     font-family: "Monument";
-    src:url(/assets/fonts/MonumentExtended-Regular.woff) format("woff"),
-        url(/assets/fonts/MonumentExtended-Regular.woff2) format("woff2"),
-        url(/assets/fonts/MonumentExtended-Regular.eot) format("eot");
+    src:url("fonts/MonumentExtended-Regular.woff") format("woff"),
+        url("fonts/MonumentExtended-Regular.woff2") format("woff2"),
+        url("fonts/MonumentExtended-Regular.eot") format("eot");
     font-style: normal;
     font-weight: normal;
     font-display: fallback;
@@ -48,7 +47,7 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
-    font-family: Formula, sans-serif;
+    font-family: "Monument", sans-serif;
     font-style: normal;
     font-weight: normal;
     line-height: 1;

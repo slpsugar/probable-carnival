@@ -293,8 +293,17 @@ img.hidden-lg-3 {
 
 @media screen and (max-width: 600px) {
     #scroll {
-        display: none;
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        height: calc(100vh/3*1);
+        -webkit-user-drag: auto;
     }
+
+
 }
 
 

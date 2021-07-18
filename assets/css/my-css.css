@@ -22,7 +22,6 @@
         url("fonts/MonumentExtended-Regular.eot") format("eot");
     font-style: normal;
     font-weight: normal;
-    font-display: fallback;
 }
 
 ::-webkit-scrollbar {
@@ -36,9 +35,6 @@ html {
     padding:20px;
     width: 100%;
     height: 100%;
-
-    text-rendering: optimizeLegibility !important;
-    -webkit-font-smoothing: antialiased !important;
 }
 
 body {
@@ -47,7 +43,7 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
-    font-family: "Monument", sans-serif;
+    font-family: "Formula", sans-serif;
     font-style: normal;
     font-weight: normal;
     line-height: 1;

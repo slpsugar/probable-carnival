@@ -6,11 +6,11 @@
 
 @font-face {
     font-family: "Formula";
-    src:url("/fonts/FormulaCondensed-Regular.svg") format("svg"),
-        url("/fonts/FormulaCondensed-Regular.woff") format("woff"),
+    src:url("/fonts/FormulaCondensed-Regular.woff") format("woff"),
         url("/fonts/FormulaCondensed-Regular.woff2") format("woff2"),
         url("/fonts/FormulaCondensed-Regular.eot") format("eot"),
-        url("/fonts/FormulaCondensed-Regular.ttf") format("truetype");
+        url("/fonts/FormulaCondensed-Regular.ttf") format("truetype"),
+        url("/fonts/FormulaCondensed-Regular.svg#svgFormulaCondensed-Regular") format("svg");
     font-weight: normal;
     font-style: normal;
 }

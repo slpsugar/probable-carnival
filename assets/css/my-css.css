@@ -53,15 +53,23 @@ body {
 
 /* SIDE MENU */
 
-/* nav {
-} */
+.nav {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: calc(100%/12*3);
+    height: 100%;
+}
+
+.icon {
+    display: none;
+}
 
 .side {
-    box-sizing: border-box;
     display: flex;
-    flex-direction: column;
     position: relative;
-    width: calc(100%/12*3);
+    flex-direction: column;
+    width: 100%;
     height: calc(100%/3*1);
     font-size: 3rem;
     /* margin-bottom: 20px; */
@@ -105,12 +113,48 @@ a.side {
     transition: color 0.7s ease-in-out;
 }
 
+@media screen and (max-width: 600px) {
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        height: calc(100%/3*1);
+        font-size:10rem;
+    }
+
+    #my-photo {
+        display: flex;
+        position: relative;
+        width: 100%;
+        /* height: 100%; */
+        object-fit:cover;
+    }
+
+    .link{
+        display: none;
+    }
+
+    .icon {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        size: 10rem;
+    }
+}
+
+
+
 
 /* WORKS */
 
 #main-content {
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
     position: absolute;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -166,7 +210,7 @@ a.side {
     position:absolute;
     width:0.2rem;
     background-color: black;
-    height:130%;
+    height: 80%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -183,6 +227,45 @@ a.side {
     font-size: 3rem;
     align-items: baseline;
     justify-content: flex-start;
+}
+
+@media screen and (max-width: 600px) {
+
+    main{
+        display:flex;
+        position: relative;
+        height: calc(100%/3*2);
+    }
+
+    #main-content {
+        width: 100%;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .left {
+        width: 75%;
+        font-size: 5rem;
+    }
+    .min-preview {
+        margin: 0 0.5rem 0 0.5rem;
+        width: 5rem;
+        height: 5rem;
+        border-radius:5rem ;
+    }
+
+    .folder {
+        width: 25%;
+        left: 75%;
+        display: flex;
+        font-size: 7.5rem;
+    }
+
+    .line{
+        width:0.2rem;
+        left: 75%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 
@@ -208,6 +291,13 @@ img.hidden-lg-3 {
     margin-top: 2rem;
 }
 
+@media screen and (max-width: 600px) {
+    #scroll {
+        display: none;
+    }
+}
+
+
 /* ICON */
 
 #bg-fixed {
@@ -218,3 +308,9 @@ img.hidden-lg-3 {
     background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 600px) {
+    #bg-fixed {
+        height: 50%;
+        left: 7%;
+    }
+}

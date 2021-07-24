@@ -117,13 +117,13 @@ document.querySelector(".street").addEventListener("click", function () {
 
 
 
-// IntersectionObserver1
+// IntersectionObserver
 
 const faders = document.querySelectorAll(".hidden-lg-3");
 
 const appearOptions = {
     threshold: 0,
-    rootMargin: "0px 0px -500px 0px"
+    rootMargin: "0px 0px -400px 0px"
 };
 
 const appearOnscroll = new IntersectionObserver

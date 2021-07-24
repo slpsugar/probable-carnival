@@ -231,10 +231,6 @@ section img {
     mix-blend-mode: luminosity;
 }
 
-.set {
-    mix-blend-mode: luminosity;
-}
-
 section img + img, section + section {
     margin-top: 2rem;
 }

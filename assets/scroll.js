@@ -30,23 +30,14 @@ bin.addEventListener("click", function(){
     behavior:"smooth"})
 });
 
-bin.addEventListener("click", function(){
-    var preview = document.getElementById("bin");
-    if (preview.style.opacity = "1")
-    {preview.style.display = "none";}
-    else {preview.style.display ="0.2";}
-});
-
-
-
-// document.querySelector(".bin").addEventListener("click", function () {
+// bin.addEventListener("click", function(){
 //     var preview = document.getElementById("bin");
-//     if (preview.style.display === "none") {
-//         preview.style.display = "block";
-//       } else {
-//         preview.style.display = "none";
-//       }
+//     if (preview.style.opacity = "0.5")
+//     {preview.classList.add("show-lg-3");}
+//     else {preview.classList.remove("show-lg-3");}
 // });
+
+
 
 document.querySelector(".maze").addEventListener("click", function () {
     var preview = document.getElementById("maze");

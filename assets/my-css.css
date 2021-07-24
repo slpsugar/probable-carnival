@@ -53,12 +53,28 @@ body {
 
 /* SIDE MENU */
 
-.nav {
+nav {
     display: flex;
     position: relative;
     flex-direction: column;
-    width: calc(100%/12*3);
+    flex-wrap: wrap;
+    width: 25%;
     height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+nav p {
+    margin: 0;
+    padding: 0;
+}
+
+nav p+p, nav p+a{
+    margin-top: 2rem;
+}
+
+nav a+a {
+    margin-top: 0.5rem;
 }
 
 .icon {
@@ -75,9 +91,18 @@ body {
     /* margin-bottom: 20px; */
 }
 
-.side a{
+
+/* .nav {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: calc(100%/12*3);
+    height: 100%;
+} */
+
+/* .side a{
     margin-top: 20px;
-}
+} */
 
 a:link, a:visited {
     color: black;
@@ -86,7 +111,7 @@ a:link, a:visited {
 
 a:hover, a:active {
     color:rgba(144, 19, 19, 1);
-    text-decoration: none;
+    text-decoration: rgba(144, 19, 19, 1) underline;
     cursor:crosshair;
 }
 
@@ -111,7 +136,8 @@ div, p {
     max-width: 16rem;
     font-size: 2rem;
     color: rgba(144, 19, 19, 1);
-    transition: color 0.7s ease-in-out;
+    /* transition: color 0.7s ease-in-out; */
+
 }
 
 @media screen and (max-width: 600px) {
@@ -291,28 +317,27 @@ div, p {
 
 }
 
+.hidden-lg-3 {
+    width: 100%;
+    /* mix-blend-mode: luminosity;
+    opacity:0.8; */
+}
 
-img.hidden-lg-3 {
+.hidden-lg-3 + .hidden-lg-3, .hidden-lg section + section {
+    margin-top: 2rem;
+}
+
+.show-lg-3 {
     width: 100%;
     mix-blend-mode: initial;
-    opacity:1;
+    opacity:1.0;
 }
+
 
 /* img.hidden-lg-3:hover {
     transform: scale(2);
 } */
 
-/* #scroll section {
-    width: 100%;
-    display: block;
-    justify-content: center;
-    align-items: center;
-} */
-
-
-.hidden-lg-3 + .hidden-lg-3, .hidden-lg section + section {
-    margin-top: 2rem;
-}
 
 @media screen and (max-width: 600px) {
     #scroll {
@@ -325,8 +350,6 @@ img.hidden-lg-3 {
         height: calc(100vh/3*1);
         -webkit-user-drag: auto;
     }
-
-
 }
 
 

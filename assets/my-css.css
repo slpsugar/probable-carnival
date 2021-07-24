@@ -127,7 +127,7 @@ div, p {
         display: flex;
         justify-content: flex-start;
         width: 100%;
-        height: calc(100%/3*1);
+        max-height: calc(100vh/3*1);
     }
 
     .side {
@@ -279,7 +279,7 @@ div, p {
     main{
         display:flex;
         position: relative;
-        height: calc(100%/3*2);
+        height: calc(100vh/3*2);
     }
 
     #main-content {

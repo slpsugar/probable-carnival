@@ -140,3 +140,27 @@ appearOptions);
 
 faders.forEach(fader => {appearOnscroll.observe(fader);});
 
+// MEDIA QUERIES
+
+var media = window.matchMedia("(max-width: 600px)" );
+var overlay = document.querySelector(".responsive");
+var button = document.querySelector(".buttonclose");
+var title = document.querySelector(".left");
+
+if (media.matches) {
+    button.style.display ="none"
+} else {}
+
+if (media.matches) {
+    overlay.style.display ="none"
+} else {}
+
+// title.addEventListener("click", function () {
+//     overlay.style.display ="block";
+//     button.style.display ="block";
+// });
+
+button.addEventListener("click", function () {
+    overlay.style.display ="none";
+    button.style.display ="none";
+});

@@ -374,7 +374,7 @@ section img + img, section + section {
         width: 100%;
         box-sizing: border-box;
         position: relative;
-        min-height: calc(100vh/3*2);
+        min-height: calc(100%/3*2);
     }
 
     .left {

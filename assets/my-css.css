@@ -398,6 +398,7 @@ section img + img, section + section {
     .line{
         width:0.2rem;
         left: 75%;
+        height: 90%;
         transform: translate(-50%, -50%);
     }
 }
@@ -441,9 +442,9 @@ section img + img, section + section {
         display: flex;
         position: fixed;
         justify-content: center;
-        align-items: baseline;
-        width: 20%;
-        height: 10%;
+        align-items: center;
+        width: 70px;
+        height: 70px;
         padding: 0;
         margin: 0;
         bottom: 5%;
@@ -454,6 +455,7 @@ section img + img, section + section {
         z-index: 99;}
     .top p {
         color: white;
+        text-align: center;
         text-decoration: none;
         font-family: "Formula", Arial, Helvetica, sans-serif;
         font-size: 10rem;

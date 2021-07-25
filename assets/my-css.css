@@ -273,18 +273,22 @@ section img + img, section + section {
 
 @media screen and (max-width: 600px) {
 
-    body {
+    html {
+        padding: 20px 20px 0 20px;
+    }
+
+    /* body {
         display: flex;
         flex-direction: column;
         position: relative;
-    }
+    } */
 
     nav {
         display: flex;
         position: relative;
         justify-content: flex-start;
         width: 100%;
-        height: calc(100vh/3*1);
+        height: 200px;
         background-color: white;
     }
 
@@ -295,37 +299,48 @@ section img + img, section + section {
         width: 50%;
         height: 100%;
         font-size:10rem;
+        justify-content: flex-end;
     }
 
     #my-photo {
         display: flex;
-        position: relative;
-        width: 100%;
-        height: 100%;
+        position: absolute;
+        width: 150px;
+        height: 150px;
         object-fit:cover;
-        margin-top: 5rem;
-        overflow: hidden;
+        /* margin-top: 5rem; */
+        top: 0;
+        /* top:10rem; */
     }
 
     #lowercase {
-        font-size: 6rem;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top:0;
+        font-size: 7rem;
         max-width: 100%;
-        margin: 5rem 0 0 0;
+        /* margin: 5rem 0 0 0; */
     }
 
+ 
+    .hidden {
+        display: none;
+    }
     .resp-xs {
         display: flex;
         position: relative;
         flex-direction: column;
         width: 50%;
-        padding-left: 5rem;
+        /* padding-left: 5rem; */
     }
 
     .about {
-        height: 70%;
+        height: 150px;
     }
     .contact {
-        height: 30%;
+        height: 50px;
+        align-items: stretch;
     }
 
     .link{
@@ -336,7 +351,7 @@ section img + img, section + section {
         display: flex;
         position: relative;
         size: 10rem;
-        padding-top: 5rem;
+        /* padding-top: 5rem; */
 
         align-items: baseline;
         justify-content: space-between;
@@ -364,7 +379,7 @@ section img + img, section + section {
 
     .left {
         width: 75%;
-        font-size: 6rem;
+        font-size: 7rem;
     }
     .min-preview {
         margin: 0 0.5rem 0 0.5rem;
@@ -377,7 +392,7 @@ section img + img, section + section {
         width: 25%;
         left: 75%;
         display: flex;
-        font-size: 7.5rem;
+        font-size: 7rem;
     }
 
     .line{

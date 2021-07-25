@@ -142,11 +142,25 @@ faders.forEach(fader => {appearOnscroll.observe(fader);});
 
 // MEDIA QUERIES
 
-document
-.querySelector(".top")
-.addEventListener("click", function () {
-    window.scrollTo({
-        top:0,
-        behavior:"smooth",
-    });
+
+// button = document.querySelector(".top");
+// window.onscroll = function () {scrollFunction()};
+
+// function scrollFunction() {
+//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//       button.style.display = "flex";
+//     } else {
+//       button.style.display = "none";
+//     }
+//   }
+
+// function topFunction() {
+//     document.body.scrollTop = 0; // For Safari
+//     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+// }
+
+document.querySelector(".top").addEventListener("click", function () {
+    var main = document.getElementById("main-content");
+    main.scrollIntoView({
+        behavior:"smooth"});
 });

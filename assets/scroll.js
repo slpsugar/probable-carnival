@@ -89,6 +89,15 @@ document.querySelector(".dive").addEventListener("click", function () {
     preview.classList.add("show-lg-3");
 });
 
+document.querySelector(".tlsp").addEventListener("click", function () {
+    var preview = document.getElementById("tlsp");
+    preview.scrollIntoView({
+        block:"center",
+        behavior:"smooth"});
+    preview.classList.add("show-lg-3");
+});
+
+
 
 // photography
 

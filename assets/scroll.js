@@ -24,6 +24,15 @@ wallace.addEventListener("click", function(){
     preview.classList.add("show-lg-3");
 });
 
+var denial = document.querySelector (".denial");
+denial.addEventListener("click", function(){
+    var preview = document.getElementById("denial");
+    preview.scrollIntoView({
+        block:"center",
+        behavior:"smooth"});
+    preview.classList.add("show-lg-3");
+});
+
 var bin = document.querySelector (".bin");
 bin.addEventListener("click", function(){
     var preview = document.getElementById("bin");
@@ -91,6 +100,14 @@ document.querySelector(".dive").addEventListener("click", function () {
 
 document.querySelector(".tlsp").addEventListener("click", function () {
     var preview = document.getElementById("tlsp");
+    preview.scrollIntoView({
+        block:"center",
+        behavior:"smooth"});
+    preview.classList.add("show-lg-3");
+});
+
+document.querySelector(".office").addEventListener("click", function () {
+    var preview = document.getElementById("office");
     preview.scrollIntoView({
         block:"center",
         behavior:"smooth"});

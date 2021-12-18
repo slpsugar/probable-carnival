@@ -1,10 +1,4 @@
 // web
-
-// document.querySelector(".luchinin").addEventListener("click", function () {
-//     var preview = document.getElementById("luchinin");
-//     preview.scrollIntoView({behavior:"smooth"});
-// });
-
 var luchinin = document.querySelector (".luchinin");
 luchinin.addEventListener("click", function(){
     var preview = document.getElementById("luchinin");
@@ -13,9 +7,7 @@ luchinin.addEventListener("click", function(){
     preview.classList.add("show-lg-3");
 });
 
-
 // illustration
-
 var wallace = document.querySelector (".wallace");
 wallace.addEventListener("click", function(){
     var preview = document.getElementById("wallace");
@@ -117,7 +109,6 @@ document.querySelector(".office").addEventListener("click", function () {
 
 
 // photography
-
 var marks = document.querySelector (".marks");
 marks.addEventListener("click", function(){
     var preview = document.getElementById("marks");
@@ -144,7 +135,6 @@ document.querySelector(".street").addEventListener("click", function () {
 
 
 // IntersectionObserver
-
 const faders = document.querySelectorAll(".hidden-lg-3");
 
 const appearOptions = {
@@ -167,26 +157,8 @@ appearOptions);
 faders.forEach(fader => {appearOnscroll.observe(fader);});
 
 // MEDIA QUERIES
-
-
-// button = document.querySelector(".top");
-// window.onscroll = function () {scrollFunction()};
-
-// function scrollFunction() {
-//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//       button.style.display = "flex";
-//     } else {
-//       button.style.display = "none";
-//     }
-//   }
-
-// function topFunction() {
-//     document.body.scrollTop = 0; // For Safari
-//     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-// }
-
 document.querySelector(".top").addEventListener("click", function () {
-    var main = document.getElementById("main-content");
+    const main = document.getElementById("main-content");
     main.scrollIntoView({
         behavior:"smooth"});
 });

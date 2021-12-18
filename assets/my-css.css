@@ -107,7 +107,7 @@ a:link, a:visited {
 a:hover, a:active {
     color:rgba(144, 19, 19, 1);
     text-decoration: rgba(144, 19, 19, 1) underline;
-    cursor:crosshair;
+    cursor:pointer;
 }
 
 div, p {

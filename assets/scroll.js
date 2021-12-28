@@ -89,8 +89,6 @@ office.addEventListener("click", function () {
     showPreviewCentre("office");
 });
 
-
-
 // photography
 marks.addEventListener("click", function(){
     showPreviewTop("marks");
@@ -103,8 +101,6 @@ faces.addEventListener("click", function () {
 street.addEventListener("click", function () {
     showPreviewTop("street");
 });
-
-
 
 // IntersectionObserver
 const faders = document.querySelectorAll(".hidden-lg-3");

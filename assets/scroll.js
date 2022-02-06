@@ -12,7 +12,6 @@ const choiceOfThree = document.querySelector(".choice");
 const moomin = document.querySelector(".moomin");
 const stairs = document.querySelector(".stairs");
 const dive = document.querySelector(".dive");
-const tlsp = document.querySelector(".tlsp");
 const office = document.querySelector(".office");
 
 const marks = document.querySelector (".marks");
@@ -79,10 +78,6 @@ stairs.addEventListener("click", function () {
 
 dive.addEventListener("click", function () {
     showPreviewCentre("dive");
-});
-
-tlsp.addEventListener("click", function () {
-    showPreviewCentre("tlsp");
 });
 
 office.addEventListener("click", function () {

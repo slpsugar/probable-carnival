@@ -2,6 +2,7 @@ const buttonUp = document.querySelector(".top");
 
 const luchinin = document.querySelector(".luchinin");
 
+const poetry = document.querySelector('.poetry')
 const wallace = document.querySelector(".wallace");
 const denial = document.querySelector(".denial");
 const bin = document.querySelector(".bin");
@@ -40,6 +41,11 @@ luchinin.addEventListener("click", function () {
 });
 
 // illustration
+
+poetry.addEventListener("click", function () {
+    showPreviewTop("poetry");
+});
+
 wallace.addEventListener("click", function () {
     showPreviewTop("wallace");
 });

@@ -443,12 +443,8 @@ section img + img, section + section {
         margin: 0;
         bottom: 5%;
         right: 5%;
-        background-color:rgba(144, 19, 19, 0.7);
-        border: none;
-        border-radius: 50%;
         z-index: 99;}
     .top p {
-        color: white;
         text-align: center;
         text-decoration: none;
         font-family: "Formula", Arial, Helvetica, sans-serif;

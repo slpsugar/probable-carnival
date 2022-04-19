@@ -1,7 +1,7 @@
 const buttonUp = document.querySelector(".top");
 
-const luchinin = document.querySelector(".luchinin");
-
+const mirror = document.querySelector(".mirror");
+const cats = document.querySelector(".cats");
 const moon = document.querySelector(".moon");
 const poetry = document.querySelector('.poetry');
 const wallace = document.querySelector(".wallace");
@@ -11,7 +11,6 @@ const maze = document.querySelector(".maze");
 const hopscotch = document.querySelector(".hopscotch");
 const cart = document.querySelector(".cart");
 const choiceOfThree = document.querySelector(".choice");
-const moomin = document.querySelector(".moomin");
 const stairs = document.querySelector(".stairs");
 const dive = document.querySelector(".dive");
 const office = document.querySelector(".office");
@@ -36,12 +35,16 @@ const showPreviewCentre = (id) => {
     element.classList.add("show-lg-3");
 };
 
-// web
-luchinin.addEventListener("click", function () {
-    showPreviewTop("luchinin");
+// illustration
+
+mirror.addEventListener("click", function () {
+    showPreviewCentre("mirror");
 });
 
-// illustration
+cats.addEventListener("click", function () {
+    showPreviewCentre("cats");
+});
+
 moon.addEventListener("click", function () {
     showPreviewCentre("moon");
 });
@@ -76,10 +79,6 @@ cart.addEventListener("click", function () {
 
 choiceOfThree.addEventListener("click", function () {
     showPreviewCentre("choice");
-});
-
-moomin.addEventListener("click", function () {
-    showPreviewCentre("moomin");
 });
 
 stairs.addEventListener("click", function () {

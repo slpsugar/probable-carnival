@@ -1,5 +1,6 @@
 const buttonUp = document.querySelector(".top");
 
+const pool = document.querySelector('.pool');
 const mirror = document.querySelector(".mirror");
 const cats = document.querySelector(".cats");
 const moon = document.querySelector(".moon");
@@ -36,6 +37,9 @@ const showPreviewCentre = (id) => {
 };
 
 // illustration
+pool.addEventListener("click", function () {
+    showPreviewTop("pool");
+});
 
 mirror.addEventListener("click", function () {
     showPreviewCentre("mirror");

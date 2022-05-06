@@ -359,9 +359,10 @@ section img + img, section + section {
         display:flex;
         flex-direction: column;
         position: relative;
-        height: calc(100vh/3*2);
+        height: 100%;
         overflow: auto;
         max-width: 100vw;
+        top: 5%;
     }
 
     #main-content {
@@ -369,6 +370,7 @@ section img + img, section + section {
         box-sizing: border-box;
         position: relative;
         min-height: calc(100%/3*2);
+        justify-content: flex-start;
     }
 
     .left {
@@ -390,10 +392,7 @@ section img + img, section + section {
     }
 
     .line{
-        width:0.2rem;
-        left: 75%;
-        height: 90%;
-        transform: translate(-50%, -50%);
+        display: none;
     }
 }
 

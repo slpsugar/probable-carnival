@@ -14,11 +14,12 @@ const cart = document.querySelector(".cart");
 const choiceOfThree = document.querySelector(".choice");
 const stairs = document.querySelector(".stairs");
 const dive = document.querySelector(".dive");
-const office = document.querySelector(".office");
+const letter = document.querySelector(".letter");
 
 const marks = document.querySelector (".marks");
 const faces = document.querySelector(".faces");
 const street = document.querySelector(".street");
+
 
 //scroll
 const showPreviewTop = (id) => {
@@ -93,8 +94,8 @@ dive.addEventListener("click", function () {
     showPreviewCentre("dive");
 });
 
-office.addEventListener("click", function () {
-    showPreviewCentre("office");
+letter.addEventListener("click", function () {
+    showPreviewTop("letter");
 });
 
 // photography

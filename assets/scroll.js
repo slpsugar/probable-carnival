@@ -1,25 +1,8 @@
 const buttonUp = document.querySelector(".top");
 
-const pool = document.querySelector('.pool');
-const mirror = document.querySelector(".mirror");
-const cats = document.querySelector(".cats");
-const moon = document.querySelector(".moon");
-const poetry = document.querySelector('.poetry');
-const wallace = document.querySelector(".wallace");
-const denial = document.querySelector(".denial");
-const bin = document.querySelector(".bin");
-const maze = document.querySelector(".maze");
-const hopscotch = document.querySelector(".hopscotch");
-const cart = document.querySelector(".cart");
-const choiceOfThree = document.querySelector(".choice");
-const stairs = document.querySelector(".stairs");
-const dive = document.querySelector(".dive");
-const letter = document.querySelector(".letter");
-
-const marks = document.querySelector (".marks");
-const faces = document.querySelector(".faces");
-const street = document.querySelector(".street");
-
+const TITLES = [...document.querySelector("#main-content").querySelectorAll('.col-lg-3')];
+const PREVIEWS = [...document.querySelector("#scroll").querySelectorAll('.preview')];
+const SERIES = [...document.querySelector("#scroll").querySelectorAll('.series')];
 
 //scroll
 const showPreviewTop = (id) => {
@@ -37,79 +20,19 @@ const showPreviewCentre = (id) => {
     element.classList.add("show-lg-3");
 };
 
-// illustration
-pool.addEventListener("click", function () {
-    showPreviewTop("pool");
-});
+TITLES.forEach(title => title.addEventListener('click', function () {
+    for (let j=0; j<PREVIEWS.length; j++) {
+        if(title.classList.contains(PREVIEWS[j].id)) {
+            showPreviewCentre(PREVIEWS[j].id);
+        }
+    }
 
-mirror.addEventListener("click", function () {
-    showPreviewCentre("mirror");
-});
-
-cats.addEventListener("click", function () {
-    showPreviewCentre("cats");
-});
-
-moon.addEventListener("click", function () {
-    showPreviewCentre("moon");
-});
-
-poetry.addEventListener("click", function () {
-    showPreviewTop("poetry");
-});
-
-wallace.addEventListener("click", function () {
-    showPreviewTop("wallace");
-});
-
-denial.addEventListener("click", function(){
-    showPreviewCentre("denial");
-});
-
-bin.addEventListener("click", function(){
-    showPreviewCentre("bin");
-});
-
-maze.addEventListener("click", function(){
-    showPreviewCentre("maze");
-});
-
-hopscotch.addEventListener("click", function () {
-    showPreviewCentre("hopscotch");
-});
-
-cart.addEventListener("click", function () {
-    showPreviewCentre("cart");
-});
-
-choiceOfThree.addEventListener("click", function () {
-    showPreviewCentre("choice");
-});
-
-stairs.addEventListener("click", function () {
-    showPreviewCentre("stairs");
-});
-
-dive.addEventListener("click", function () {
-    showPreviewCentre("dive");
-});
-
-letter.addEventListener("click", function () {
-    showPreviewTop("letter");
-});
-
-// photography
-marks.addEventListener("click", function(){
-    showPreviewTop("marks");
-});
-
-faces.addEventListener("click", function () {
-    showPreviewTop("faces");
-});
-
-street.addEventListener("click", function () {
-    showPreviewTop("street");
-});
+    for (let i=0; i<SERIES.length; i++) {
+        if (title.classList.contains(SERIES[i].id)) {
+            showPreviewTop(SERIES[i].id);
+        }
+    }
+}))
 
 // IntersectionObserver
 const faders = document.querySelectorAll(".hidden-lg-3");

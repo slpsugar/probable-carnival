@@ -70,7 +70,7 @@ nav p {
 }
 
 nav p+p, nav p+a{
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 nav a+a {
@@ -116,8 +116,8 @@ div, p {
 }
 
 #my-photo {
-    width: 16rem;
-    height: 16rem;
+    width: 47%;
+    /* height: 16rem; */
     object-fit:cover;
 }
 
